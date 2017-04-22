@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" />
+  <title>IHM</title>
+<script src="jquery-3.2.0.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.css">
+<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.css">
+	
+
+
+<script src="functions.js"></script>
+
+</head>
+<body>
+
+<button type="button" id="create-image">+</button>
+<button type="button" id="import">Importer</button>
+<div id="import-form" title="Import JSON">
+<form>
+<TEXTAREA id="text-area" value="" name="nom" rows=6 cols=60>Valeur par défaut</TEXTAREA>
+</form>
+
+</div>
+<div id="dialog-form">
+	<form>
+		<label for="description">Description</label>
+		<input id="description" type="text" name="description" value=""/><br/>
+		<label for="images">Image</label>
+		<select id="images" name="image">
+			<option value="earth.jpg">earth.jpg</option>
+			<option value="flight.jpg">flight.jpg</option>
+			<option value="rocket.jpg">rocket.jpg</option>
+		</select></br>
+		<fieldset>
+			<legend>New</legend>
+		    <label>X: <input type="text" size="3" id="posx" name="x" value=""></label>
+			<label>Y: <input type="text" size="3" id="ypos" name="y" value=""></label>
+			</br> 
+			
+		</fieldset>
+	</form>
+</div>
+<div id="affichage">
+<!-- 	<form> -->
+<!-- 		<label for="description">Description</label> -->
+<!-- 		<input id="desc" type="text" name="description" value=""/><br/> -->
+<!-- 		<label for="images">Image</label> -->
+<!-- 		<select id="images" name="image"> -->
+<!-- 			<option value="earth.jpg">earth.jpg</option> -->
+<!-- 			<option value="flight.jpg">flight.jpg</option> -->
+<!-- 			<option value="rocket.jpg">rocket.jpg</option> -->
+<!-- 		</select></br> -->
+<!-- 			<legend>New Position</legend> -->
+<!-- 		    <label>X: <input type="text" size="3" id="nx" name="x" value=""></label> -->
+<!-- 			<label>Y: <input type="text" size="3" id="ny" name="y" value=""></label> -->
+<!-- 			</br>  -->
+<!-- 			<button type="button" id="ok" value="ok">OK</button> -->
+<!-- 			<button type="button" id="annuler" value="annuler">Annuler</button> -->
+<!-- 			<button type="button" id="supprimer" value="supprimer">Supprimer</button> -->
+<!-- 	</form> -->
+</div>
+
+</body>
+</html>

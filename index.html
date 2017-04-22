@@ -1,0 +1,163 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" />
+  <title>IHM</title>
+<script src="jquery-3.2.0.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.css"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.structure.css"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.theme.css"></script>
+<script src="first.js"></script>
+
+ <button id="bouton" class="but" >+</button> 
+</head>
+<body>
+
+<div id="dialog-form" title="Create new Display">
+  <p class="validateTips">All form fields are required.</p>
+
+		<form>
+			<fieldset>
+				<label for="images"> Images <select id="choix"
+					name="pictures" tabindex="10">
+						<option value="earth.jpg" alt="earth" title="earth">earth</option>
+						<option value="flight.jpg" alt="flight" title="flight">flight</option>
+						<option value="rocket.jpg" alt="rocket" title="rocket">rocket</option>
+
+				</select>
+				</label> </br> <label for="description">Description</label> <input type="text"
+					name="description" id="description" value=" "
+					class="text ui-widget-content ui-corner-all">
+				<table>
+					<tr>
+						<td>
+							<fieldset>
+								<legend>New</legend>
+								<label>X: <input type="text" size="3" id="newX"></label>
+								<label>Y: <input type="text" size="3" id="newY"></label>
+								</br> <input id="btnCreate" type="button" value="OK"> <input
+									id="btnCancel" type="button" value="Annuler">
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+				<!--   <ul id="container">
+ 			 <img src="images/earth.jpg" width="458" height="308"  alt="earth"  id="img">
+  			 <img src="images/flight.jpg" width="512" height="307" alt="flight" id="img">
+ 			 <img src="images/rocket.jpg" width="300" height="353" alt="rocket" id="img">
+ 
+  				<a id="previous" href="#">Previous</a>
+ 			    <a id="next" href="#">Next</a>
+		</ul>	 -->
+
+				<!-- Allow form submission with keyboard without duplicating the dialog button -->
+				<input type="submit" tabindex="-1"
+					style="position: absolute; top: -1000px">
+
+
+			</fieldset>
+		</form>
+	</div>
+  <div id="box" ></div>
+  <!-- contains all the items and item description -->
+  <div id="allItems"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" />
+  <title>IHM</title>
+<script src="jquery-3.2.0.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.css"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.structure.css"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.theme.css"></script>
+<script src="first.js"></script>
+
+        
+
+  <button id="bouton" class="but" >+</button>  
+</head>
+
+
+<body>
+<div id="box" title="Create new display">
+  <p class="validateTips">All form fields are required.</p>
+ </div>
+ <div class="clickable">
+ <span class="display"></span>
+</div>
+  <form>
+    <fieldset>
+<!--     <div id="container">
+     	<img src="images/earth.jpg" width="458" height="308" alt="earth">
+  		<img src="images/flight.jpg" width="512" height="307" alt="flight">
+  		<img src="images/rocket.jpg" width="300" height="353" alt="rocket">
+ 
+  		<a id="previous" href="#">Previous</a>
+	 	 <a id="next" href="#">Next</a>
+	 </div>	  -->
+<!-- 	 <ul id="container">
+	     	<img src="images/earth.jpg" width="458" height="308" alt="earth"   id="img">  
+	   		<img src="images/flight.jpg" width="512" height="307" alt="flight" id="img"> 
+	  		<img src="images/rocket.jpg" width="300" height="353" alt="rocket" id="img">
+	  		 <a id="previous" href="#">Previous</a>
+ 			 <a id="next" href="#">Next</a>
+	 </ul>
+      <p><label for="description" display="inline">Description</label>
+      <input type="text" name="description" id="decription" value="description" class="text ui-widget-content ui-corner-all" ></p>
+    <p>  <label for="position" display="inline">Position</label>
+      <input type="positionX" name="positionX" id="positionX" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+       <input type="positionY" name="positionY" id="positionY" value="yyyyyy" class="text ui-widget-content ui-corner-all">
+ </p>
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+  <!--     <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+
+<section class="head"></section>
+
+<section class="foot"></section>
+ <div id="allItems">
+ </div>
+<div class="footer">
+</div>
+</body>
+
+
+</html> -->
